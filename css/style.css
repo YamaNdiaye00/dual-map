@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    font-family: sans-serif;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-map {
+    width: 500px; /* Winging the size here for demo */
+    cursor: crosshair;
+}
+
+.ref-map {
+    position: relative;
+    width: 500px; /* Winging the size here for demo */
+}
+
+.highlight {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(128, 0, 255, 0.5); /* purple overlay */
+    pointer-events: none;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+.flag {
+    position: absolute;
+    font-size: 22px;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    user-select: none;
+}
+
